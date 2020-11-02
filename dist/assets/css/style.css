@@ -307,10 +307,32 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts//Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap; }
+
 body {
   margin: 0;
   padding: 0;
-  line-height: 1.5; }
+  line-height: 1.6;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #546e7a; }
 
 *,
 *::before,
@@ -325,18 +347,74 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
-  display: inline-block; }
+  display: inline-block;
+  color: #546e7a; }
 
-ul li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
 .container {
   min-width: 320px;
-  max-width: 1710px;
+  max-width: 1200px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto; }
 
 /* blocks */
+.header__top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px; }
+
+.header__text {
+  margin-left: auto;
+  margin-right: 50px; }
+  .header__text span {
+    color: #e74c3c; }
+
+.header__btn {
+  width: 72px;
+  padding: 4px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px; }
+
+.header__btn-register {
+  margin-left: 7px;
+  background-color: #e74c3c; }
+
+.header__btn-login {
+  background-color: #8bc34a; }
+
+.header__menu {
+  background-color: #263238; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px; }
+
+.menu__list li {
+  display: inline-block; }
+  .menu__list li + li {
+    margin-left: 30px; }
+
+.menu__list a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff; }

@@ -1,0 +1,41 @@
+.tutorial{
+   padding-top: 66px;
+   padding-bottom: 120px;
+}
+
+.tutorial__title{
+   margin-bottom: 57px;
+}
+
+.tutorial__list{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 30px;
+}
+
+.tutorial__list-item{
+   max-width: 370px;
+}
+
+.tutorial__item-image{
+   img{
+      display: block;
+      width: 100%;
+      height: 270px;
+
+      object-fit: cover;
+      object-position: center;
+   }
+}
+
+.tutorial__item-title{
+   padding: 30px 20px;
+
+   background-color: #f8f8f8;
+
+   text-align: center;
+   color: $bg;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.2;
+}

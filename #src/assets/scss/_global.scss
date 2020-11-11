@@ -34,6 +34,32 @@ li{
    list-style-type: none;
 }
 
+.title{
+   margin-bottom: 30px;
+
+   color: $bg;
+   font-weight: 700;
+   line-height: 1.6;
+   font-size: 36px;
+   text-align: center;
+}
+
+.rate-star{
+   display: inline-block !important;
+   margin-right: 13px;
+}
+
 .container{
    @include min-max(320px, 1200px, 15px);
+}
+
+.container-fluid{
+   @include min-max(320px, 1920px, 30px);
+}
+
+
+@media (max-width: 720px) {
+   .container-fluid{
+      @include min-max(320px, 100%, 15px);
+   }
 }
